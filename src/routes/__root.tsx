@@ -1,3 +1,4 @@
+import logo from "@/assets/branding/Screenshot from 2026-10-01 12-44-43.png";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -80,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "ODA Burger Bahrain" },
       { name: "description", content: "ODA Burger Bahrain — bold burgers and legendary flavor." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "ODA Burger" },
       { property: "og:title", content: "ODA Burger Bahrain" },
       { property: "og:description", content: "Bold burgers and legendary flavor in Bahrain." },
       { property: "og:type", content: "website" },
@@ -92,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: logo, type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;600;700;800&family=Noto+Kufi+Arabic:wght@700;900&family=Noto+Sans+Arabic:wght@400;600;700;800&display=swap" },
