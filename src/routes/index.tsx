@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
     { property: "og:description", content: "Bold burgers, fresh ingredients and legendary flavor in Bahrain." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
-  ] }, component: Index,
+  ] }), component: Index,
 });
 
 type CartItem = { item: MenuItem; option: "sandwich" | "meal" | "single"; price: number; quantity: number };
